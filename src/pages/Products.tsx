@@ -144,12 +144,7 @@ const Products = () => {
                 <AnimatedSection key={p.name} delay={i * 0.06}>
                   <motion.div whileHover={{ y: -6 }} className="bg-card border border-border rounded-3xl overflow-hidden group h-full flex flex-col">
                     <div className="overflow-hidden">
-                      <img
-                        src={p.img}
-                        alt={p.name}
-                        loading="lazy"
-                        className="w-full h-52 object-cover transition-transform duration-700 group-hover:scale-110"
-                      />
+                      <img src={p.img} alt={p.name} className="w-full h-52 object-cover transition-transform duration-700 group-hover:scale-110" />
                     </div>
                     <div className="p-6 flex flex-col flex-1">
                       <h3 className="text-lg font-bold text-foreground mb-1">{p.name}</h3>

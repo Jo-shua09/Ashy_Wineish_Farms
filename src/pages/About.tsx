@@ -63,7 +63,7 @@ const About = () => (
             </div>
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
-                <img src={founderImg} alt="Founder Kasali Kabiru Ayanshina" loading="lazy" className="w-full h-[32rem] object-cover" />
+                <img src={founderImg} alt="Founder Kasali Kabiru Ayanshina" className="w-full h-[32rem] object-cover" />
               </div>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -117,7 +117,7 @@ const About = () => (
 
     {/* Full-width image break */}
     <div className="h-[40vh] min-h-[300px] overflow-hidden">
-      <img src={aboutFarmImg} alt="Aerial view of our mixed farm" loading="lazy" className="w-full h-full object-cover" />
+      <img src={aboutFarmImg} alt="Aerial view of our mixed farm" className="w-full h-full object-cover" />
     </div>
 
     {/* Core Values */}

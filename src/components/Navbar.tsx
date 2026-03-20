@@ -90,13 +90,13 @@ const Navbar = () => {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
+            animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden min-h-[700px] h-full glass border-t border-border/50 overflow-hidden"
+            className="lg:hidden glass border-t border-border/50 overflow-y-auto flex flex-col"
           >
-            <div className="w-full min-h-[500px] h-full flex justify-between flex-col">
-              <div className="container mx-auto px-4 py-4 flex flex-col gap-2">
+            <div className="w-full flex-1 flex flex-col justify-between pb-32 pt-4">
+              <div className="container mx-auto px-4 flex flex-col gap-2">
                 {navLinks.map((link) => (
                   <Link
                     key={link.to}
@@ -110,16 +110,19 @@ const Navbar = () => {
                 ))}
               </div>
 
-              <div className="flex flex-col w-full h-full justify-end items-end pr-4">
-                <Link to="/wines" className="mt-2">
-                  <Button variant="outline" className="w-full rounded-full gap-2 border-[#8B1A1A]/40 text-[#8B1A1A] hover:bg-[#8B1A1A]/10 font-bold">
-                    <Wine className="h-4 w-4" />
+              <div className="flex flex-col w-full px-4 gap-4 mt-8">
+                <Link to="/wines" className="w-full">
+                  <Button
+                    variant="outline"
+                    className="w-full rounded-full gap-2 border-[#8B1A1A]/40 text-[#8B1A1A] hover:bg-[#8B1A1A]/10 font-bold h-14"
+                  >
+                    <Wine className="h-5 w-5" />
                     Ashy Wines
                   </Button>
                 </Link>
-                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="mt-2">
-                  <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground rounded-full gap-2">
-                    <MessageCircle className="h-4 w-4" />
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground rounded-full gap-2 font-bold h-14">
+                    <MessageCircle className="h-5 w-5" />
                     Order on WhatsApp
                   </Button>
                 </a>

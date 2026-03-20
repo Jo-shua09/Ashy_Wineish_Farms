@@ -53,7 +53,6 @@ const Gallery = () => (
                 <img
                   src={img.src}
                   alt={img.caption}
-                  loading="lazy"
                   className={`w-full object-cover ${i % 3 === 1 ? "h-80 lg:h-96" : "h-56 lg:h-72"} transition-transform duration-700 group-hover:scale-110`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--hero-overlay))] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">

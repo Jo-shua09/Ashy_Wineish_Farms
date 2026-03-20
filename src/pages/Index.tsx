@@ -69,7 +69,7 @@ const Index = () => {
   return (
     <PageTransition>
       {/* Hero — Full-bleed cinematic like HarvestHill */}
-      <section ref={heroRef} className="relative h-screen min-h-[700px] flex items-end overflow-hidden">
+      <section ref={heroRef} className="relative h-screen min-h-[700px] flex items-center md:items-end overflow-hidden">
         <motion.img
           src={heroImg}
           alt="Lush green farm at Ashy Wineish Farms"
@@ -80,7 +80,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--hero-overlay))] via-[hsl(var(--hero-overlay)/0.5)] to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--hero-overlay)/0.7)] to-transparent" />
 
-        <motion.div style={{ opacity: heroOpacity }} className="relative z-10 w-full flex items-end justify-">
+        <motion.div style={{ opacity: heroOpacity }} className="relative z-10 w-full flex items-center md:items-end">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-20 lg:pb-28">
             <div className="flex md:flex-nowrap flex-wrap justify-end gap-x-8 items-end ">
               {/* Left — headline */}
@@ -184,12 +184,7 @@ const Index = () => {
               </div>
               <div className="relative">
                 <div className="rounded-3xl overflow-hidden shadow-2xl">
-                  <img
-                    src={aboutFarmImg}
-                    alt="Farm workers tending crops"
-                    loading="lazy"
-                    className="w-full h-[28rem] lg:h-[32rem] object-cover img-zoom"
-                  />
+                  <img src={aboutFarmImg} alt="Farm workers tending crops" className="w-full h-[28rem] lg:h-[32rem] object-cover img-zoom" />
                 </div>
                 {/* Floating card overlay */}
                 <motion.div
@@ -237,12 +232,7 @@ const Index = () => {
                   className="bg-primary-foreground/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-primary-foreground/10 group"
                 >
                   <div className="overflow-hidden">
-                    <img
-                      src={p.img}
-                      alt={p.name}
-                      loading="lazy"
-                      className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
+                    <img src={p.img} alt={p.name} className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110" />
                   </div>
                   <div className="p-7">
                     <h3 className="text-xl font-bold text-primary-foreground mb-2">{p.name}</h3>
@@ -316,12 +306,7 @@ const Index = () => {
                   </Link>
                 </div>
                 <div className="relative h-64 lg:h-full min-h-[320px]">
-                  <img
-                    src={wineRedImg}
-                    alt="Premium red wine from Ashy  Wineish"
-                    loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
+                  <img src={wineRedImg} alt="Premium red wine from Ashy  Wineish" className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/30 to-transparent lg:block hidden" />
                 </div>
               </div>
@@ -335,7 +320,7 @@ const Index = () => {
         <section className="py-12 pt-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative rounded-3xl overflow-hidden">
-              <img src={heroImg} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+              <img src={heroImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--hero-overlay))] to-[hsl(var(--hero-overlay)/0.8)]" />
               <div className="relative z-10 py-20 lg:py-28 px-8 lg:px-16 text-center">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-primary-foreground mb-6">Ready to Order Fresh Produce?</h2>

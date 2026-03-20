@@ -152,7 +152,7 @@ const Wines = () => {
               </span>
             </div>
 
-            <nav className="hidden md:flex items-center gap-8">
+            <nav className="hidden lg:flex items-center gap-8">
               {["Collection", "Process", "Gallery", "Experience"].map((item) => (
                 <a
                   key={item}
@@ -165,7 +165,7 @@ const Wines = () => {
             </nav>
 
             <div className="flex items-center gap-3">
-              <Link to="/" className="hidden md:inline-flex items-center gap-2 text-sm text-[#f5f0e8]/50 hover:text-[#d4a574] transition-colors">
+              <Link to="/" className="hidden lg:inline-flex items-center gap-2 text-sm text-[#f5f0e8]/50 hover:text-[#d4a574] transition-colors">
                 <ArrowLeft className="h-3.5 w-3.5" />
                 Farm
               </Link>
@@ -193,7 +193,7 @@ const Wines = () => {
 
         <motion.div style={{ opacity: heroOpacity }} className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.3 }}>
-            <img src={wineLogo} alt="Ashy Wineish Logo" className="h-20 w-20 md:h-28 md:w-28 mx-auto my-2 !mb-0 object-contain" />
+            <img src={wineLogo} alt="Ashy Wineish Logo" className="h-20 w-20 lg:h-28 md:w-28 mx-auto my-2 !mb-0 object-contain" />
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }}>
             <span className="text-[#d4a574] text-xs font-bold tracking-[0.3em] uppercase">Premium Wine Collection</span>
@@ -285,7 +285,7 @@ const Wines = () => {
               </div>
               <div className="relative">
                 <div className="rounded-3xl overflow-hidden">
-                  <img src={cellarImg} alt="Wine cellar with oak barrels" loading="lazy" className="w-full h-[28rem] lg:h-[34rem] object-cover" />
+                  <img src={cellarImg} alt="Wine cellar with oak barrels" className="w-full h-[28rem] lg:h-[34rem] object-cover" />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-[#8B1A1A] rounded-2xl p-6 shadow-2xl hidden lg:block">
                   <Wine className="h-8 w-8 text-[#d4a574] mb-2" />
@@ -318,7 +318,6 @@ const Wines = () => {
                     <img
                       src={wine.img}
                       alt={wine.name}
-                      loading="lazy"
                       className="w-full h-72 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute top-4 right-4 bg-[#8B1A1A] text-[#f5f0e8] text-xs font-bold px-3 py-1.5 rounded-full">{wine.type}</div>
@@ -392,7 +391,7 @@ const Wines = () => {
       {/* Full-width Image Break */}
       <AnimatedSection>
         <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
-          <img src={harvestImg} alt="Grape harvest" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+          <img src={harvestImg} alt="Grape harvest" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#0a0a0a]/60" />
           <div className="relative z-10 h-full flex items-center justify-center text-center px-4">
             <div>
@@ -427,7 +426,6 @@ const Wines = () => {
                   <img
                     src={img.src}
                     alt={img.caption}
-                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
