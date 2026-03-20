@@ -114,13 +114,13 @@ const Products = () => {
       <section className="section-padding">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Tabs */}
-          <div className="flex justify-center mb-10">
-            <div className="inline-flex bg-card border border-border rounded-full p-1.5 gap-1">
+          <div className="flex justify-center mb-10 overflow-x-auto pb-2 scrollbar-hide">
+            <div className="inline-flex bg-card border border-border rounded-full p-1.5 gap-1 whitespace-nowrap">
               {tabs.map((t) => (
                 <button
                   key={t.value}
                   onClick={() => setTab(t.value)}
-                  className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all ${
+                  className={`px-4 sm:px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all ${
                     tab === t.value ? "bg-primary text-primary-foreground shadow-md" : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
