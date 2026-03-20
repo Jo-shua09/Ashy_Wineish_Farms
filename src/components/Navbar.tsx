@@ -110,7 +110,7 @@ const Navbar = () => {
                 ))}
               </div>
 
-              <div className="flex flex-col w-full px-4 gap-4 mt-8">
+              <div className="flex flex-col w-full px-4 gap-4 mt-8 pb-20">
                 <Link to="/wines" className="w-full">
                   <Button
                     variant="outline"
