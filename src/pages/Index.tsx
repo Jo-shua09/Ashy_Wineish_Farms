@@ -283,7 +283,7 @@ const Index = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative rounded-3xl overflow-hidden bg-[#0a0a0a]">
               <div className="grid lg:grid-cols-2 items-center">
-                <div className="p-4 lg:p-8">
+                <div className="p-6 lg:p-8">
                   <div className="flex items-center gap-2 mb-4">
                     <Wine className="h-4 w-4 text-[#8B1A1A]" />
                     <span className="text-[#8B1A1A] font-bold text-xs uppercase tracking-[0.2em]">Premium Wine</span>
