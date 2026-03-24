@@ -19,18 +19,21 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
+  Users,
+  Calendar,
+  PartyPopper,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/AnimatedSection";
-
 import wineLogo from "@/assets/wine-logo.png";
 import heroImg from "@/assets/wine-hero.jpg";
 import redBottle from "@/assets/wine-red-bottle.jpg";
 import whiteBottle from "@/assets/wine-white-bottle.jpg";
 import roseBottle from "@/assets/wine-rose-bottle.jpg";
 import sparklingBottle from "@/assets/wine-sparkling.jpg";
-import cellarImg from "@/assets/wine-cellar.jpg";
-import harvestImg from "@/assets/wine-harvest.jpg";
+import eventServiceImg from "@/assets/wine-event-service.jpg";
+import partyImg from "@/assets/wine-party.jpg";
+import corporateImg from "@/assets/wine-corporate.jpg";
 import tastingImg from "@/assets/wine-tasting.jpg";
 
 const WHATSAPP_URL = "https://wa.me/2349061230796?text=" + encodeURIComponent("Hello, I'd like to order wine from Ashy Wineish.");
@@ -101,30 +104,34 @@ const highlights = [
   },
 ];
 
-const processSteps = [
+const serviceSteps = [
   {
-    icon: Grape,
-    title: "Vineyard Selection",
-    desc: "Hand-selected grapes from the finest regional vineyards, chosen for optimal ripeness and character.",
+    icon: PartyPopper,
+    title: "Event Planning",
+    desc: "Tell us about your event — weddings, birthdays, corporate gatherings, or private parties. We'll curate the perfect wine selection.",
   },
   {
     icon: GlassWater,
-    title: "Artisan Crafting",
-    desc: "Traditional winemaking methods blended with modern techniques for exceptional depth and balance.",
+    title: "Premium Selection",
+    desc: "Choose from our curated collection of Red, White, Rosé, and Sparkling wines tailored to your event's theme and menu.",
   },
-  { icon: Sparkles, title: "Oak Aging", desc: "Patient barrel aging in premium oak develops complexity, texture, and the signature smoothness." },
   {
-    icon: Award,
-    title: "Quality Certified",
-    desc: "Every bottle passes rigorous quality checks before earning the Ashy Wineish seal of excellence.",
+    icon: Users,
+    title: "Full Service",
+    desc: "Our professional team handles setup, service, and presentation — ensuring your guests enjoy a world-class wine experience.",
+  },
+  {
+    icon: Calendar,
+    title: "Seamless Delivery",
+    desc: "We deliver chilled and ready to serve, on time, every time. From intimate dinners to large-scale celebrations.",
   },
 ];
 
 const galleryImages = [
-  { src: cellarImg, caption: "Our Cellar" },
-  { src: harvestImg, caption: "Harvest Season" },
+  { src: eventServiceImg, caption: "Event Wine Service" },
+  { src: partyImg, caption: "Wedding Reception" },
+  { src: corporateImg, caption: "Corporate Events" },
   { src: tastingImg, caption: "Wine Tasting" },
-  { src: heroImg, caption: "The Vineyard" },
 ];
 
 const Wines = () => {
@@ -198,12 +205,12 @@ const Wines = () => {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }}>
             <span className="text-[#d4a574] text-xs font-bold tracking-[0.3em] uppercase">Premium Wine Collection</span>
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mt-3 mb-3 leading-[0.9] tracking-tight">
-              Taste the
+              Elevate Your
               <br />
-              <span className="text-[#8B1A1A]">Extraordinary</span>
+              <span className="text-[#8B1A1A]">Celebrations</span>
             </h1>
             <p className="text-lg md:text-xl text-[#f5f0e8]/50 max-w-xl mx-auto mb-10 leading-relaxed">
-              Curated wines of distinction, crafted with passion and precision. From our cellar to your occasion.
+              We serve premium wines at your events, weddings, parties, and corporate functions. Let us bring the elegance.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="#collection">
@@ -252,45 +259,50 @@ const Wines = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
-                <span className="text-[#8B1A1A] font-bold text-xs uppercase tracking-[0.2em]">Our Heritage</span>
+                <span className="text-[#8B1A1A] font-bold text-xs uppercase tracking-[0.2em]">Who We Are</span>
                 <h2 className="text-4xl sm:text-5xl font-black mt-4 mb-8 leading-tight">
-                  Where Tradition
+                  Premium Wine
                   <br />
-                  Meets <span className="text-[#d4a574]">Craft</span>
+                  <span className="text-[#d4a574]">Event Service</span>
                 </h2>
                 <p className="text-[#f5f0e8]/50 leading-relaxed mb-6 text-lg">
-                  Ashy Wineish Nigeria Limited is a premium wine brand born from the same passion for quality that drives Ashj Klineish Farms. We
-                  believe that exceptional wine begins with exceptional care — from vineyard selection to the final pour.
+                  Asty Wineish Nigeria Limited is a premium wine distribution and event service company. We don't just sell wine — we bring the
+                  complete wine experience to your events, parties, weddings, and corporate gatherings.
                 </p>
                 <p className="text-[#f5f0e8]/50 leading-relaxed mb-8">
-                  Our collection features carefully curated wines sourced from distinguished vineyards and crafted using time-honored methods. Each
-                  bottle carries our commitment to excellence and the warmth of Nigerian hospitality.
+                  Our curated collection features carefully selected wines from world-class vineyards. Whether it's an intimate dinner or a grand
+                  celebration, we provide full wine service with professional presentation and impeccable taste.
                 </p>
                 <div className="flex items-center gap-6">
                   <div className="text-center">
-                    <p className="text-3xl font-black text-[#8B1A1A]">2024</p>
-                    <p className="text-[10px] text-[#f5f0e8]/40 uppercase tracking-wider">Founded</p>
+                    <p className="text-3xl font-black text-[#8B1A1A]">100+</p>
+                    <p className="text-[10px] text-[#f5f0e8]/40 uppercase tracking-wider">Events Served</p>
                   </div>
                   <div className="w-px h-12 bg-[#f5f0e8]/10" />
                   <div className="text-center">
                     <p className="text-3xl font-black text-[#8B1A1A]">4</p>
-                    <p className="text-[10px] text-[#f5f0e8]/40 uppercase tracking-wider">Varieties</p>
+                    <p className="text-[10px] text-[#f5f0e8]/40 uppercase tracking-wider">Wine Varieties</p>
                   </div>
                   <div className="w-px h-12 bg-[#f5f0e8]/10" />
                   <div className="text-center">
                     <p className="text-3xl font-black text-[#8B1A1A]">Premium</p>
-                    <p className="text-[10px] text-[#f5f0e8]/40 uppercase tracking-wider">Quality</p>
+                    <p className="text-[10px] text-[#f5f0e8]/40 uppercase tracking-wider">Service</p>
                   </div>
                 </div>
               </div>
               <div className="relative">
                 <div className="rounded-3xl overflow-hidden">
-                  <img src={cellarImg} alt="Wine cellar with oak barrels" className="w-full h-[28rem] lg:h-[34rem] object-cover" />
+                  <img
+                    src={eventServiceImg}
+                    alt="Wine service at elegant event"
+                    loading="lazy"
+                    className="w-full h-[28rem] lg:h-[34rem] object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-[#8B1A1A] rounded-2xl p-6 shadow-2xl hidden lg:block">
-                  <Wine className="h-8 w-8 text-[#d4a574] mb-2" />
-                  <p className="text-sm font-bold">Crafted with</p>
-                  <p className="text-xs text-[#f5f0e8]/60">Passion & Precision</p>
+                  <PartyPopper className="h-8 w-8 text-[#d4a574] mb-2" />
+                  <p className="text-sm font-bold">Serving Your</p>
+                  <p className="text-xs text-[#f5f0e8]/60">Special Moments</p>
                 </div>
               </div>
             </div>
@@ -363,13 +375,13 @@ const Wines = () => {
       {/* Process */}
       <section id="process" className="py-12 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection className="text-center mb-10">
-            <span className="text-[#8B1A1A] font-bold text-xs uppercase tracking-[0.2em]">The Process</span>
-            <h2 className="text-4xl sm:text-5xl font-black mt-4">From Vine to Glass</h2>
+          <AnimatedSection className="text-center mb-20">
+            <span className="text-[#8B1A1A] font-bold text-xs uppercase tracking-[0.2em]">How It Works</span>
+            <h2 className="text-4xl sm:text-5xl font-black mt-4">Wine Service for Your Events</h2>
           </AnimatedSection>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {processSteps.map((step, i) => (
+            {serviceSteps.map((step, i) => (
               <AnimatedSection key={step.title} delay={i * 0.1}>
                 <motion.div
                   whileHover={{ y: -6, boxShadow: "0 24px 48px -12px rgba(139, 26, 26, 0.15)" }}
@@ -391,16 +403,18 @@ const Wines = () => {
       {/* Full-width Image Break */}
       <AnimatedSection>
         <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
-          <img src={harvestImg} alt="Grape harvest" className="absolute inset-0 w-full h-full object-cover" />
+          <img src={partyImg} alt="Wine at elegant party" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#0a0a0a]/60" />
           <div className="relative z-10 h-full flex items-center justify-center text-center px-4">
             <div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 leading-tight">
-                Every Bottle Tells
-                <br />a <span className="text-[#d4a574]">Story</span>
+                Making Every Event
+                <br />
+                <span className="text-[#d4a574]">Unforgettable</span>
               </h2>
               <p className="text-[#f5f0e8]/50 max-w-lg mx-auto">
-                From sun-drenched vineyards to your glass, we honor every step of the journey with care and craftsmanship.
+                From intimate gatherings to grand celebrations, we bring the perfect wines and professional service to make your occasion truly
+                special.
               </p>
             </div>
           </div>
