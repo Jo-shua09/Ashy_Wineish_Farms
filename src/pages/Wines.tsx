@@ -266,7 +266,7 @@ const Wines = () => {
                   <span className="text-[#d4a574]">Event Service</span>
                 </h2>
                 <p className="text-[#f5f0e8]/50 leading-relaxed mb-6 text-lg">
-                  Asty Wineish Nigeria Limited is a premium wine distribution and event service company. We don't just sell wine — we bring the
+                  Ashy Wineish Nigeria Limited is a premium wine distribution and event service company. We don't just sell wine — we bring the
                   complete wine experience to your events, parties, weddings, and corporate gatherings.
                 </p>
                 <p className="text-[#f5f0e8]/50 leading-relaxed mb-8">
@@ -550,7 +550,11 @@ const Wines = () => {
             <AnimatedSection delay={0.2}>
               <div className="space-y-6">
                 {[
-                  { icon: MapPin, label: "Location", value: "Owode, Ogun State, Yewa South, Owode-Idiroko" },
+                  {
+                    icon: MapPin,
+                    label: "Locations",
+                    value: "36, Community Road Jerry-Farm Odunla, Odogunyan Ikorodu, Lagos State / Owode, Ogun State, Yewa South, Owode-Idiroko",
+                  },
                   { icon: Phone, label: "Phone / WhatsApp", value: "09061230796" },
                   { icon: Mail, label: "Email", value: "Kasalikabiru1993@gmail.com" },
                   { icon: Clock, label: "Business Hours", value: "Mon — Sun: 8am — 6pm" },
