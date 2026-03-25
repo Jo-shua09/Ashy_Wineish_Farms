@@ -553,7 +553,7 @@ const Wines = () => {
                   {
                     icon: MapPin,
                     label: "Locations",
-                    value: "36, Community Road Jerry-Farm Odunla, Odogunyan Ikorodu, Lagos State.",
+                    value: "36, Community Road Jerry-Farm Odonla, Odogunyan Ikorodu, Lagos State.",
                   },
                   { icon: Phone, label: "Phone / WhatsApp", value: "09061230796" },
                   { icon: Mail, label: "Email", value: "Kasalikabiru1993@gmail.com" },
